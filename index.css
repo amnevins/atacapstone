@@ -1,0 +1,119 @@
+body {
+
+}
+
+* {
+    box-sizing: border-box;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: thin solid red;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.stack-3 {
+    width: 33%;
+}
+
+[class*="stack-"] {
+    float: left;
+    padding: 8px;
+}
+
+@media only screen and (max-width: 725px) {
+    /* For mobile phones: */
+    [class*="stack-"] {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.inner {
+    background-color: #c6c6c6;
+}
+
+.center {
+    text-align: center;
+}
+
+.card {
+    border: #777777 thin dashed;
+    background-color: #fff;
+    padding: 5px;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+}
+
+label {
+    color: #c6c6c6;
+    font-size: 30px;
+}
+
+.fromLeft {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+input[type="radio"]:checked ~ label {
+    color: gold;
+    font-size: 30px;
+}
+
+label:hover ~ label {
+    color: gold;
+    font-size: 30px;
+}
+
+label:hover {
+    color: gold;
+    font-size: 30px;
+}
+
+.selected {
+    color: gold;
+    font-size: 30px;
+}
+
+.selected ~ label {
+    color: gold;
+    font-size: 30px;
+}
+
+.poster-size {
+    width: 30%;
+}
+
+.hidden {
+    display: none;
+}
+
+.util-p-b-s {
+    padding-bottom: 15px;
+}
+
+#results div > img {
+    width: 30%;
+}

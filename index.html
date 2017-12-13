@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<header><h1 class="center">Austin's Movie Tracker</h1></header>
+<section class="stack-3">
+    <h2 class="center">Here's some of my fav's</h2>
+    <article id="favorites" class="center">
+
+    </article>
+</section>
+<section class="stack-3">
+    <h2 class="center">Rate your Fav's</h2>
+    <article id="rate">
+        <div class="center util-p-b-s">
+            <input placeholder="Enter a movie title" id="search" type="text" />
+            <button id="search-button">Search</button>
+        </div>
+    </article>
+    <form class="center starRating hidden">
+        <p class="fromLeft">
+            <input type="radio" name="star">
+            <label data-value="5">&#9733;</label>
+            <input type="radio" name="star">
+            <label data-value="4" >&#9733;</label>
+            <input type="radio" name="star" >
+            <label data-value="3">&#9733;</label>
+            <input type="radio" name="star">
+            <label data-value="2">&#9733;</label>
+            <input type="radio" name="star">
+            <label data-value="1">&#9733;</label>
+        </p>
+    </form>
+    <article id="results">
+
+    </article>
+</section>
+<section class="stack-3">
+    <h2 class="center">Stay away from these stinkers</h2>
+    <article id="stinkers" class="center">
+
+    </article>
+</section>
+<script src="index.js"></script>
+</body>
+</html>
